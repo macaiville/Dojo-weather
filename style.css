@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-nav {
+    margin: 0 auto;
+    background-color: #a0c5f8;
+    padding: 20px;
+    justify-content: space-evenly;
+}
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 60px;
+    color: white;
+    margin-right: 45px;
+}
+.top-nav-cities {
+    list-style-type: none;
+    gap: 40px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+}
+.main-container {
+    margin: 0 auto;
+    width: 1024px;
+    padding-top: 20px;
+}
+.show-temp {
+    border-bottom: 4px solid black;
+}
+h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+}
+.show-temp-content {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 19px;
+    gap: 20px;
+}
+.show-temp-content>select {
+    border: 3px solid black;
+}
+.forecast {
+    padding: 20px;
+}
+.card-body {
+    text-align: center;
+    background-color:#eeeeee;
+    padding: 30px;
+}
+.card-body>img {
+    border: 2px solid white;
+    border-radius: 100px;
+    height: 150px;
+    margin: 8px;
+}
+.card-body>h3 {
+    font-size: 40px;
+    padding: 5px 5px;
+}
+.degrees-parent {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.weather-type {
+    font-size: 20px;
+    padding: 15px 0px;
+}
+.degrees1 {
+    font-size: 25px;
+    color: red;
+}
+.degrees2 {
+    font-size: 25px;
+    color: blue;
+}
+.bottom-container {
+    border: 5px solid black;
+    padding: 30px;
+    background-color: #eeeeee;
+    width: 960px;
+    position: fixed;
+}
+.bottom-container-content {
+    gap: 40px;
+}
+.cookies {
+    font-size: 30px;
+}
+.bottom-container-bnt>button {
+    background-color: #a0c5f8;
+    box-shadow: 3px 3px black;
+    font-size: 15px;
+    padding: 4px 10px;
+    border: 2px solid black;
+    width: 100px;
+}

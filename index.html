@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DojoWeather</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- This is the top navigation bar for the weather site -->
+
+    <header class="top-nav d-flex">
+        <h1>DojoWeather</h1>
+        <div class="top-nav-content">
+            <ul class="top-nav-cities d-flex">
+                <li onclick="alert('Loading the weather report')">Burbank</li>
+                <li onclick="alert('Loading the weather report')">Chicago</li>
+                <li onclick="alert('Loading the weather report')">Dallas</li>
+            </ul>
+        </div>
+    </header>
+
+<!-- This is going to be the main container that holds 3 extra containers to display forecast, cookies and temperature selection -->
+
+    <div class="main-container">
+        <div class="show-temp d-flex">
+            <h2>San Jose</h2>
+            <div class="show-temp-content d-flex">
+                <p>show temperature in </p>
+                <select name="temperature" id="temperature" onchange="change()">
+                    <option value="Celsius">C</option>
+                    <option value="Fahrenheit">F</option>
+                </select>
+            </div>
+        </div>
+        <!-- This container will hold and display the weather forecast for the next 4 days -->
+        <div class="forecast d-flex">
+            <div class="card-body">
+                <h3>Today</h3>
+                <img src="./assets/some_rain.png" alt="Rain cloud">
+                <p class="weather-type">some rain</p>
+                <div class="degrees-parent">
+                    <p class="degrees1"><span id="degrees1">24</span><sup>o</sup></p>
+                    <p class="degrees2"><span id="degrees6">18</span><sup>o</sup></p>
+                </div>
+            </div>
+            <div class="card-body">
+                <h3>Tomorrow</h3>
+                <img src="./assets/some_sun.png" alt="sun">
+                <p class="weather-type">some sun</p>
+                <div class="degrees-parent">
+                    <p class="degrees1"><span id="degrees12">27</span><sup>o</sup></p>
+                    <p class="degrees2"><span id="degrees67">19</span><sup>o</sup></p>
+                </div>
+            </div>
+            <div class="card-body">
+                <h3>Friday</h3>
+                <img src="./assets/some_clouds.png" alt="clouds">
+                <p class="weather-type">some clouds</p>
+                <div class="degrees-parent">
+                    <p class="degrees1"><span id="degrees123">21</span><sup>o</sup></p>
+                    <p class="degrees2"><span id="degrees678">16</span><sup>o</sup></p>
+                </div>
+            </div>
+            <div class="card-body">
+                <h3>Saturday</h3>
+                <img src="./assets/some_sun.png" alt="sun">
+                <p class="weather-type">some sun</p>
+                <div class="degrees-parent">
+                    <p class="degrees1"><span id="degrees1234">26</span><sup>o</sup></p>
+                    <p class="degrees2"><span id="degrees6789">21</span><sup>o</sup></p>
+                </div>
+            </div>
+        </div>
+        
+    <div class="bottom-container d-flex" id="bottom">
+        <div class="bottom-container-content d-flex">                
+            <img src="./assets/cookie.png" alt="Picture of a cookie">
+            <div class="cookies">
+                <p class="cookie-time"><strong>Stop! Cookie Time</strong></p>
+                <p id="text1">We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyze our traffic. <a href="">Read More...</a></p>
+            </div>
+        </div>
+        <div class="bottom-container-bnt">
+            <button onclick="accept(this)">I Accept</button>
+        </div>
+    </div>
+
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
